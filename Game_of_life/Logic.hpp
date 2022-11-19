@@ -12,7 +12,7 @@ protected:
 public:
 	Logic();
 
-	bool is_Alive(std::vector<std::vector<int>>, int, int);
+	bool is_Alive(std::vector<std::vector<int>>&, int, int);
 	int get_iterations();
 
 

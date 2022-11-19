@@ -6,7 +6,7 @@ Logic::Logic()
 {
 }
 
-bool Logic::is_Alive(std::vector<std::vector<int>> temp, int x, int y)
+bool Logic::is_Alive(std::vector<std::vector<int>>& temp, int x, int y)
 {
 	int alive = 0;
 

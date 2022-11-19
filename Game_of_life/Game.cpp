@@ -13,9 +13,10 @@ void Game::set_ineration_position()
 	std::cout << "Generation : " << Game::get_iterations();
 }
 
-void Game::set_game_start()
+void Game::game_start()
 {
 	Game::set_random_cells();
+
 	
 	while (true)
 	{

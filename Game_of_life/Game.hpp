@@ -13,6 +13,7 @@ protected:
 public:
 	Game();
 
+	void set_ineration_position();
 	void set_game_start();
 };
 

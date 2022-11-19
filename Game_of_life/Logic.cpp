@@ -2,6 +2,7 @@
 
 
 Logic::Logic()
+	: m_cout(0)
 {
 }
 
@@ -26,4 +27,9 @@ bool Logic::is_Alive(std::vector<std::vector<int>> temp, int x, int y)
 	
 	
 	return false;
+}
+
+int Logic::get_iterations()
+{
+	return m_cout;
 }

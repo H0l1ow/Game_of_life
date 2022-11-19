@@ -11,5 +11,4 @@ int main()
     Game life;
 
     life.set_game_start();
-    
 }

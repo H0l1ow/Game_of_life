@@ -2,7 +2,7 @@
 #include <ctime>
 #include "Game.hpp"
 
-
+#undef main
 
 int main()
 {
@@ -11,4 +11,7 @@ int main()
     Game life;
 
     life.game_start();
+
+
+
 }

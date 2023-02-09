@@ -5,16 +5,9 @@ Game::Game()
 {
 }
 
-void Game::set_ineration_position()
-{
-	COORD position = { 5, Game::map_of_life.size() + 2};
-	HANDLE output = GetStdHandle(STD_OUTPUT_HANDLE);
-	SetConsoleCursorPosition(output, position);
-	std::cout << "Generation : " << Game::get_iterations();
-}
-
 void Game::game_start()
 {
+
 	Game::set_random_cells();
 
 	
@@ -32,17 +25,17 @@ void Game::game_start()
 		{
 			for (int j = 0; j < Game::temp_map_of_life[i].size(); j++)
 			{
-				if (Game::temp_map_of_life[i][j] == 0) { std::cout << " "; }
-				else { std::cout << "o"; }
-			}
-			std::cout << "\n";
-		}
+				if (Game::temp_map_of_life[i][j] ) { Game::pixel(i, j); }
 
-		Game::m_cout++;
+			}
+
+		}
 		Game::map_of_life = Game::temp_map_of_life;
 
-		set_ineration_position();
-		Sleep(100);
-		system("cls");
+		Game::show();
+		Game::clear();
+
+		Game::input();
+
 	}
 }

@@ -4,8 +4,9 @@
 #include <iostream>
 #include "Logic.hpp"
 #include "Grid.hpp"
+#include "Screen.hpp"
 
-class Game : protected Logic, protected Grid
+class Game : protected Logic, protected Grid, protected Screen
 {
 protected:
 
